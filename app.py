@@ -5,7 +5,7 @@ import os
 import json
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "https://adicteng.com"}})
+CORS(app)
 
 
 # SQLite のデータベース設定
