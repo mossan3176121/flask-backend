@@ -5,7 +5,8 @@ import os
 import json
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "https://adicteng.com"}})
+
 
 # SQLite のデータベース設定
 db_path = os.path.join(os.path.dirname(__file__), "audio_files.db")
@@ -53,4 +54,4 @@ def get_audio_data():
     return jsonify({"error": "File not found"}), 404
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(debug=True)
