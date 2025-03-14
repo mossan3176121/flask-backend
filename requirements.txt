@@ -2,3 +2,4 @@ Flask
 flask-cors
 youtube-transcript-api
 SQLAlchemy
+gunicorn
