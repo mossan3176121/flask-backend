@@ -16,7 +16,8 @@ import traceback
 load_dotenv(dotenv_path=Path(__file__).parent / ".env")
 
 app = Flask(__name__)
-CORS(app, origins=["https://adicteng.com"], supports_credentials=True)
+CORS(app, origins=["https://adicteng.com"], supports_credentials=True, methods=["POST"])
+
 
 # ========== OpenAI 設定 ==========
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -100,8 +101,6 @@ def clean_transcript_basic(raw_transcript):
 # ========== 会話API（/chat） ==========
 @app.route("/chat", methods=["POST"])
 def chat():
-    if request.method == "OPTIONS":
-        return '', 200
     data = request.get_json()
     user_message = data.get("message")
     character = data.get("character", "random")
