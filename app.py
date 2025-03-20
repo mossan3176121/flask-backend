@@ -16,7 +16,7 @@ import traceback
 load_dotenv(dotenv_path=Path(__file__).parent / ".env")
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://adicteng.com"], supports_credentials=True)
 
 # ========== OpenAI 設定 ==========
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
