@@ -98,7 +98,7 @@ def clean_transcript_basic(raw_transcript):
     ]
 
 # ========== 会話API（/chat） ==========
-@app.route("/chat", methods=["POST", "OPTIONS"])
+@app.route("/chat", methods=["POST"])
 def chat():
     if request.method == "OPTIONS":
         return '', 200
@@ -121,7 +121,7 @@ def chat():
         return jsonify({"reply": "Sorry, something went wrong."}), 500
 
 # ========== 添削API（/correct） ==========
-@app.route("/correct", methods=["POST", "OPTIONS"])
+@app.route("/correct", methods=["POST"])
 def correct():
     if request.method == "OPTIONS":
         return '', 200
