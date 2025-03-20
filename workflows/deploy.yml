@@ -1,0 +1,29 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main  # ← 自動デプロイ対象のブランチ（必要に応じて変更）
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up SSH key
+      run: |
+        echo "${{ secrets.KEY }}" > private_key
+        chmod 600 private_key
+
+    - name: Deploy to VPS via SSH
+      run: |
+        ssh -i private_key -o StrictHostKeyChecking=no ${{ secrets.USERNAME }}@${{ secrets.HOST }} << 'EOF'
+          cd /home/ubuntu/flask-backend
+          git pull origin main
+          source venv/bin/activate
+          pip install -r requirements.txt
+          sudo systemctl restart flaskapp
+        EOF
