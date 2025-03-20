@@ -122,8 +122,6 @@ def chat():
 # ========== 添削API（/correct） ==========
 @app.route("/correct", methods=["POST"])
 def correct():
-    if request.method == "OPTIONS":
-        return '', 200
     data = request.get_json()
     user_sentence = data.get("message")
     character = data.get("character", "random")
