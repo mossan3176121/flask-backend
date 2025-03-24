@@ -7,7 +7,7 @@ def create_app():
     load_dotenv()
 
     app = Flask(__name__)
-    CORS(app, origins=["https://adicteng.com", "http://127.0.0.1:5000"], supports_credentials=True, methods=["POST", "GET"])
+    CORS(app, origins=["https://adicteng.com", "http://127.0.0.1:5000"], supports_credentials=True, methods=["POST", "GET", "OPTIONS"], allow_headers=["Content-Type", "Authorization"])
 
     from .routes import audio, subtitles, chat, correct, translate
     app.register_blueprint(audio.bp)
