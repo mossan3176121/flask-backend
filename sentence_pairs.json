@@ -1,0 +1,230 @@
+[
+    {
+      "japanese": "私は昨日、映画を見ました。",
+      "english": "I watched a movie yesterday."
+    },
+    {
+      "japanese": "彼は毎朝コーヒーを飲みます。",
+      "english": "He drinks coffee every morning."
+    },
+    {
+      "japanese": "私たちは週末にサッカーをします。",
+      "english": "We play soccer on weekends."
+    },
+    {
+      "japanese": "この本はとても面白いです。",
+      "english": "This book is very interesting."
+    },
+    {
+      "japanese": "明日は雨が降るかもしれません。",
+      "english": "It might rain tomorrow."
+    },
+    {
+      "japanese": "試着してもいいですか？",
+      "english": "Can I try this on?"
+    },
+    {
+      "japanese": "今向かっています。",
+      "english": "I'm on my way."
+    },
+    {
+      "japanese": "くつろいでね。",
+      "english": "Make yourself at home."
+    },
+    {
+      "japanese": "おなかペコペコ！",
+      "english": "I'm starving!"
+    },
+    {
+      "japanese": "週末どうだった？",
+      "english": "How was your weekend?"
+    },
+    {
+      "japanese": "最近どうしてたの？",
+      "english": "How have you been lately?"
+    },
+    {
+      "japanese": "暇なときは何をするのが好き？",
+      "english": "What do you like to do in your free time?"
+    },
+    {
+      "japanese": "料理にハマってるんだ。",
+      "english": "I'm really into cooking."
+    },
+    {
+      "japanese": "もっと趣味の時間があればいいのになぁ。",
+      "english": "I wish I had more time for my hobbies."
+    },
+    {
+      "japanese": "私が対応します。",
+      "english": "I'll take care of it."
+    },
+    {
+      "japanese": "念のため確認させてください。",
+      "english": "Let me confirm just in case."
+    },
+    {
+      "japanese": "すぐに折り返します。",
+      "english": "I'll get back to you soon."
+    },
+    {
+      "japanese": "遅れてすみません。",
+      "english": "Sorry I'm late."
+    },
+    {
+      "japanese": "日程を変更できますか？",
+      "english": "Can we reschedule?"
+    },
+    {
+      "japanese": "また連絡取り合いましょう。",
+      "english": "Let's keep in touch."
+    },
+    {
+      "japanese": "チェックインカウンターはどこですか？",
+      "english": "Where is the check-in counter?"
+    },
+    {
+      "japanese": "チェックインをお願いします。",
+      "english": "I'd like to check in, please."
+    },
+    {
+      "japanese": "窓側の席にできますか？",
+      "english": "Can I have a window seat?"
+    },
+    {
+      "japanese": "預けられる荷物は何個までですか？",
+      "english": "How many bags can I check in?"
+    },
+    {
+      "japanese": "搭乗ゲートはどこですか？",
+      "english": "Where is the boarding gate?"
+    },
+    {
+      "japanese": "搭乗開始は何時ですか？",
+      "english": "What time does boarding start?"
+    },
+    {
+      "japanese": "荷物が見当たりません。",
+      "english": "I can't find my luggage."
+    },
+    {
+      "japanese": "これは保安検査の列ですか？",
+      "english": "Is this the security check line?"
+    },
+    {
+      "japanese": "どれくらい遅れますか？",
+      "english": "How long is the delay?"
+    },
+    {
+      "japanese": "乗り継ぎカウンターはどこですか？",
+      "english": "Where is the transfer counter?"
+    },
+    {
+      "japanese": "[ロンドン行きの乗り継ぎ便があります。",
+      "english": "I have a connecting flight to London."
+    },
+    {
+      "japanese": "また保安検査を受ける必要がありますか？",
+      "english": "Do I need to go through security again?"
+    },
+    {
+      "japanese": "荷物はここで受け取らないといけませんか？",
+      "english": "Do I need to pick up my luggage here?"
+    },
+    {
+      "japanese": "第2ターミナルへはどう行けばいいですか？",
+      "english": "How can I get to Terminal 2?"
+    },
+    {
+      "japanese": "次の便までどれくらい時間がありますか？",
+      "english": "How much time do I have until my next flight?"
+    },
+    {
+      "japanese": "私の便は定刻通りですか？",
+      "english": "Is my flight on time?"
+    },
+    {
+      "japanese": "飛行機に乗り遅れました。どうすればいいですか？",
+      "english": "I missed my flight. What should I do?"
+    },
+    {
+      "japanese": "ターミナル間にシャトルバスはありますか？",
+      "english": "Is there a shuttle bus between terminals?"
+    },
+    {
+      "japanese": "搭乗ゲートを探すのを手伝ってもらえますか？",
+      "english": "Can you help me find the boarding gate?"
+    },
+    {
+      "japanese": "山田の名前で予約しています。",
+      "english": "I have a reservation under the name Yamada."
+    },
+    {
+      "japanese": "今チェックインできますか？",
+      "english": "Can I check in now?"
+    },
+    {
+      "japanese": "朝食は含まれていますか？",
+      "english": "Is breakfast included?"
+    },
+    {
+      "japanese": "朝6時にモーニングコールをお願いできますか？",
+      "english": "Could you give me a wake-up call at 6 a.m.?"
+    },
+    {
+      "japanese": "Wi-Fiはありますか？",
+      "english": "Is there Wi-Fi?"
+    },
+    {
+      "japanese": "レイトチェックアウトできますか？",
+      "english": "Can I check out late?"
+    },
+    {
+      "japanese": "エアコンが動きません。",
+      "english": "The air conditioner doesn't work."
+    },
+    {
+      "japanese": "部屋を変えてもらえますか？",
+      "english": "Can I change rooms?"
+    },
+    {
+      "japanese": "荷物をここに預けたいのですが。",
+      "english": "I'd like to leave my luggage here."
+    },
+    {
+      "japanese": "チェックアウトします。",
+      "english": "I'd like to check out."
+    },
+    {
+      "japanese": "体調が良くありません。",
+      "english": "I'm not feeling well."
+    },
+    {
+      "japanese": "手伝っていただけますか？",
+      "english": "Could you help me?"
+    },
+    {
+      "japanese": "パスポートをなくしました。",
+      "english": "I lost my passport."
+    },
+    {
+      "japanese": "ホテルが見つかりません。",
+      "english": "I can't find the hotel."
+    },
+    {
+      "japanese": "道に迷ったみたいです。",
+      "english": "I think I'm lost."
+    },
+    {
+      "japanese": "日本語が話せる方はいますか？",
+      "english": "Is there anyone who speaks Japanese?"
+    },
+    {
+      "japanese": "携帯が使えません。",
+      "english": "My phone isn't working."
+    },
+    {
+      "japanese": "タクシーを呼んでもらえますか？",
+      "english": "Can you call me a taxi?"
+    }
+  ]
