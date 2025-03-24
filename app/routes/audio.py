@@ -13,16 +13,22 @@ engine = create_engine(db_uri, echo=True)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-@bp.route("/all", methods=["GET"])
+@bp.route("/all", methods=["GET", "OPTIONS"])
 def get_audio_data():
-    audio_data = session.query(AudioFile).all()
-    return jsonify([
-        {
-            "id": file.id,
-            "verb": file.verb,
-            "verb_jp": file.verb_jp,
-            "sentence": file.sentence,
-            "sentence_jp": file.sentence_jp,
-            "path": file.path
-        } for file in audio_data
-    ])
+    try:
+        audio_data = session.query(AudioFile).all()
+        print("📢 audio_data の件数:", len(audio_data))  # ← 追加
+        return jsonify([
+            {
+                "id": file.id,
+                "verb": file.verb,
+                "verb_jp": file.verb_jp,
+                "sentence": file.sentence,
+                "sentence_jp": file.sentence_jp,
+                "path": file.path
+            } for file in audio_data
+        ])
+    except Exception as e:
+        print("🔥 /all エラー:", e)
+        return jsonify({"error": "サーバー側でエラーが発生しました"}), 500
+
