@@ -6,7 +6,7 @@ import os
 
 bp = Blueprint("audio", __name__, url_prefix="/audio_data")
 
-db_path = os.path.join(os.path.dirname(__file__), "../../audio_files.db")
+db_path = os.path.join(os.path.dirname(__file__), "../models/audio_files.db")
 db_uri = f"sqlite:///file:{os.path.abspath(db_path)}?mode=ro&uri=true"
 
 engine = create_engine(db_uri, echo=True)
