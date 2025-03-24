@@ -7,7 +7,13 @@ def create_app():
     load_dotenv()
 
     app = Flask(__name__)
-    CORS(app, origins=["https://adicteng.com", "http://127.0.0.1:5000"], supports_credentials=True, methods=["POST", "GET", "OPTIONS"], allow_headers=["Content-Type", "Authorization"])
+
+    # ✅ CORSの設定をより厳密に、複数Origin対応で動作する形に修正
+    CORS(app,
+         resources={r"/*": {"origins": ["https://adicteng.com", "http://127.0.0.1:5000"]}},
+         supports_credentials=True,
+         methods=["POST", "GET", "OPTIONS"],
+         allow_headers=["Content-Type", "Authorization"])
 
     from .routes import audio, subtitles, chat, correct, translate
     app.register_blueprint(audio.bp)
