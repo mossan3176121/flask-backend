@@ -4,8 +4,8 @@ from dotenv import load_dotenv
 import os
 
 
-# URL = "https://adicteng.com"
-URL = "*"
+URL = "https://adicteng.com"
+# URL = "*"
 def create_app():
     load_dotenv()
 
