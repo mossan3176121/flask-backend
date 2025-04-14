@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from app.models.audio import AudioFile, Base
 import os
 
-bp = Blueprint("audio", __name__, url_prefix="/audio_data")
+bp = Blueprint("audio", __name__, url_prefix="/audio_data/all")
 
 db_path = os.path.join(os.path.dirname(__file__), "../data/mini_conversation/travel_tourism_1.db")
 db_uri = f"sqlite:///file:{os.path.abspath(db_path)}?mode=ro&uri=true"
@@ -13,7 +13,7 @@ engine = create_engine(db_uri, echo=True)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-@bp.route("/all", methods=["GET", "OPTIONS"])
+@bp.route("", methods=["GET", "OPTIONS"])
 def get_audio_data():
     try:
         audio_data = session.query(AudioFile).all()
