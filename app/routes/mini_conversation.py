@@ -39,10 +39,12 @@ def submit_input():
 
 def get_db_path(scene_name):
     # 使用可能なシーン一覧を限定しておく（ホワイトリスト方式）
-    allowed_scenes = {"travel_tourism_1",
-                      "daily_life_1",
-                      "travel_tourism_2,",
-                      "travel_tourism_3"}
+    # allowed_scenes = {"travel_tourism_1",
+    #                   "daily_life_1",
+    #                   "travel_tourism_2,",
+    #                   "travel_tourism_3"}
+
+    allowed_scenes = set(item.value for item in AllowedScenes)
 
     if scene_name not in allowed_scenes:
         raise ValueError("許可されていない scene_name です")
@@ -60,3 +62,10 @@ def get_db_path(scene_name):
 
     return db_path
 
+from enum import Enum
+
+class AllowedScenes(str, Enum):
+    TRAVEL_1 = "travel_tourism_1"
+    DAILY_1 = "daily_life_1"
+    TRAVEL_2 = "travel_tourism_2"
+    TRAVEL_3 = "travel_tourism_3"
