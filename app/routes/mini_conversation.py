@@ -41,7 +41,7 @@ def get_db_path(scene_name):
     # 使用可能なシーン一覧を限定しておく（ホワイトリスト方式）
     allowed_scenes = {"travel_tourism_1",
                       "daily_life_1",
-                      "travel_tourism_2,"
+                      "travel_tourism_2,",
                       "travel_tourism_3"}
 
     if scene_name not in allowed_scenes:
